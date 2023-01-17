@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Travel the world</title>
 </head>
 <body>
     <header>
         <nav>
-            <span aria-hidden="true" class="material-symbols-outlined">location_on</span>
+            <span aria class="material-symbols-outlined">location_on</span>
             <h1>Travel the world</h1>
         </nav>
     </header>
@@ -21,11 +22,11 @@
                 <img src="./asset/london2.jpg" alt="London">
                 <figcaption id="captionCover">
                     <ul>
-                        <li><a href="">Flight</a></li>
+                        <li class="active"><a href="">Flight</a></li>
                         <li><a href="">Hotel</a></li>
                         <li><a href="">Rental</a></li>
                     </ul>
-                    <section aria-labelledby="searchFormTitle">
+                    <section id="searchSection" aria-labelledby="searchFormTitle">
                         <h2 id="searchFormTitle">Travel the world with us</h2>
                         <form>
                             <label for="from">From</label>
@@ -78,10 +79,10 @@
                 </ul>
             </section>
         </section>
-        <section aria-labelledby="travelTitle" class="section">
+        <section aria-labelledby="travelTitle" id="travelSection" class="section">
             <h2 id="travelTitle">Explore Nature</h2>
             <p>Travel with us and see nature at its finest.</p>
-            <div role="region">
+            <div role="region" id="travelDiv">
                 <article>
                     <img src="./asset/mountains2.jpg" alt="">
                     <h3>Mountains, Austria</h3>
