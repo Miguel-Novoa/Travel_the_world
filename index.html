@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <span aria class="material-symbols-outlined">location_on</span>
+            <span aria-hidden="true" class="material-symbols-outlined">location_on</span>
             <h1>Travel the world</h1>
         </nav>
     </header>
@@ -42,8 +42,8 @@
         <section aria-labelledby="offersTitle" class="section" id="offersSection">
             <h2 id="offersTitle">Good Offers Right Now</h2>
             <p>Up to 50% discount.</p>
-            <section id="places">
-                <ul>
+            <div role="region" id="places">
+                <ul id="placesMain">
                     <li>
                         <figure>
                             <img src="./asset/cinqueterre.jpg" alt="cinqueterre">
@@ -51,7 +51,7 @@
                         </figure>
                     </li>
                 </ul>
-                <ul>
+                <ul id="placesImgs">
                     <li>
                         <figure>
                             <img src="./asset/newyork2.jpg" alt="New York">
@@ -77,7 +77,7 @@
                         </figure>
                     </li>
                 </ul>
-            </section>
+            </div>
         </section>
         <section aria-labelledby="travelTitle" id="travelSection" class="section">
             <h2 id="travelTitle">Explore Nature</h2>
@@ -104,11 +104,11 @@
             <p>Join our newsletter</p>
             <form>
                 <label for="mailSubscribe">E-mail</label>
-                <input type="email" name="mail" id="mailSubscribe">
+                <input type="email" name="mail" id="mailSubscribe" placeholder="Your e-mail adress...">
                 <button type="submit">Subscribe</button>
             </form>
         </section>
-        <section class="section" aria-labelledby="contactTitle">
+        <section class="section" aria-labelledby="contactTitle" id="contactSection">
             <h2 id="contactTitle">Contact</h2>
             <p>Let us book your next trip!</p>
             <form>
@@ -117,9 +117,9 @@
                     <li>Phone: +00 151515</li>
                     <li>Email: contact@gmail.com</li>
                 </ul>
-                <input type="text" name="name" id="nameInput" placeholder="First name...">
-                <input type="email" name="mail" id="mailContactInput" placeholder="E-mail...">
-                <input type="text" name="message" id="messageInput" placeholder="Your message...">
+                <input type="text" name="name" id="nameInput" placeholder="First name..." class="nameMailInputs">
+                <input type="email" name="mail" id="mailContactInput" placeholder="E-mail..." class="nameMailInputs">
+                <input type="text" name="message" id="messageInput" placeholder="Your message..." id="messageInput">
                 <button type="submit">SEND MESSAGE</button>
             </form>
         </section>
