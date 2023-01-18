@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,10 +29,10 @@
                     <section id="searchSection" aria-labelledby="searchFormTitle">
                         <h2 id="searchFormTitle">Travel the world with us</h2>
                         <form>
-                            <label for="from">From</label>
-                            <input type="date" name="from" id="from">
-                            <label for="to">To</label>
-                            <input type="date" name="to" id="to">
+                            <label id="topLeft" for="from">From</label>
+                            <input id="bottomLeft" type="date" name="from" id="from">
+                            <label id="topRight" for="to">To</label>
+                            <input id="bottomRight" type="date" name="to" id="to">
                             <button type="submit">Search and find dates</button>
                         </form>
                     </section>
@@ -115,7 +115,7 @@
                 </ul>
                 <input type="text" name="name" id="nameInput" placeholder="First name..." class="nameMailInputs">
                 <input type="email" name="mail" id="mailContactInput" placeholder="E-mail..." class="nameMailInputs">
-                <input type="text" name="message" id="messageInput" placeholder="Your message..." id="messageInput">
+                <input type="text" name="message" id="messageInput" placeholder="Your message...">
                 <button type="submit">SEND MESSAGE</button>
             </form>
         </section>

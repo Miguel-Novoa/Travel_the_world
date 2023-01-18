@@ -65,9 +65,8 @@ nav{
 
 #search #captionCover{
     display: table-caption;
-    border: 2px solid red;
-    width: 60rem;
-    height: 40rem;
+    width: 50rem;
+    height: 35rem;
     position: absolute;
     margin: auto;
     left: 0;
@@ -83,6 +82,7 @@ nav{
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 0 !important;
 }
 
 #captionCover ul li{
@@ -105,22 +105,46 @@ nav{
 
 #captionCover ul li a{
     color: white;
+    font-size: 1.9rem;
+    font-weight: bold;
 }
 
 #search #searchSection{
     display: flex;
     flex-flow: column;
     align-items: center;
-    border: 2px solid yellow;
     padding: 5%;
 }
 
 #search #searchSection form{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    row-gap: 1rem;
+    display: grid;
     width: 100%;
+    grid-template-areas:
+    "topleft topright"
+    "bottomleft bottomright"
+    "foot  foot";
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+#search #searchSection form input{
+    height: 4rem;
+}
+
+#search #searchSection form #topLeft{
+    grid-area: topleft;
+}
+
+#search #searchSection form #topRight{
+    grid-area: topright;
+}
+
+#search #searchSection form #bottomLeft{
+    grid-area: bottomleft;
+}
+
+#search #searchSection form #bottomRight{
+    grid-area: bottomright;
 }
 
 #search #searchSection form button{
@@ -129,6 +153,7 @@ nav{
     background-color: black;
     color: white;
     border: none;
+    grid-area: foot;
 }
 
 #offersSection ul{
@@ -219,6 +244,8 @@ nav{
     background-color: var(--nav-font-color);
     color: white;
     border: none;
+    font-size: 1.9rem;
+    font-weight: bold;
 }
 
 #subscribe form button:hover{
