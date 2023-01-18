@@ -1,13 +1,20 @@
 /* Reset */
 html {
-    line-height: 1.15; /* 1 */
+    font-size: 62.5%;
+    
     -webkit-text-size-adjust: 100%; /* 2 */
 }
   
 body {
+    font: 1.6rem sans-serif;
     margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
 }
   
+figure{
+    margin: 0;
+}
 main {
     display: block;
 }
