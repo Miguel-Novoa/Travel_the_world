@@ -17,7 +17,6 @@
 body{
     background-color: var(--background-color);
     font-family: 'Raleway', sans-serif;
-    width: 100vw;
 }
 
 nav{
@@ -32,19 +31,21 @@ nav{
 .section{
     padding-left: 1rem;
     padding-right: 1rem;
+    display: flex;
+    flex-flow: column;
 }
 
 #search #cover{
     display: table;
     position: relative;
-    width: 100vw;
     margin: 0;
+    width: 100vw;
 }
 
 #search #captionCover{
     display: table-caption;
     border: 2px solid red;
-    width: 30%;
+    width: 40rem;
     position: absolute;
     top: 0%;
     background-color: var(--background-color);
@@ -69,12 +70,31 @@ nav{
     background-color: black;
 }
 
+#captionCover ul li:hover{
+    background-color: var(--nav-font-color);
+}
+
 #captionCover ul .active{
     background-color: var(--nav-font-color);
 }
 
 #captionCover ul li a{
     color: white;
+}
+
+#offersSection{
+    max-width: 80rem;
+}
+
+#offersSection #places{
+    display: flex;
+    flex-flow: row;
+}
+
+#offersSection #places ul{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
 }
 
 #search #searchSection{
