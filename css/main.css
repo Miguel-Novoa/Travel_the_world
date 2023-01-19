@@ -12,7 +12,7 @@
     font-weight: 400;
     font-display: swap;
     src: url('https://fonts.googleapis.com/css2?family=Raleway');
-  }
+}
 
 body{
     background-color: var(--background-color);
@@ -20,6 +20,10 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
+}
+
+h1, h2, h3{
+    font-weight: 200;
 }
 
 button{
@@ -213,6 +217,7 @@ nav{
     width: 100%;
     vertical-align: middle;
     object-fit: cover;
+    transition: opacity 1s;
 }
 
 #placesImgs img:hover{
