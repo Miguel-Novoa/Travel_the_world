@@ -234,27 +234,27 @@ nav{
     background-color: white;
 }
 
-#travelSection #travelDiv article{
+#travelSection #travelDiv .cards{
     width: 100%;
 }
 
-#travelSection #travelDiv article section{
+#travelSection #travelDiv .cards section{
     padding: 1rem;
 }
 
-#travelDiv article button{
+#travelDiv .cards button{
     height: 4rem;
     border: 1px solid black;
     background-color: white;
 }
 
-#travelDiv article button:hover{
+#travelDiv .cards button:hover{
     border: none;
     background-color: black;
     color: white;
 }
 
-#travelSection #travelDiv article img{
+#travelSection #travelDiv .cards img{
     width: 100%;
 }
 
