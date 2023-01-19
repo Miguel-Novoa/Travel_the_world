@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./asset/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./asset/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./asset/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" type="image/png" href="./asset/apple-touch-icon.png" />
+    <link rel="manifest" href="./asset/site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
     <link rel="stylesheet" href="./css/reset.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -29,10 +36,10 @@
                     <section id="searchSection" aria-labelledby="searchFormTitle">
                         <h2 id="searchFormTitle">Travel the world with us</h2>
                         <form>
-                            <label id="topLeft" for="from">From</label>
-                            <input id="bottomLeft" type="date" name="from" id="from">
-                            <label id="topRight" for="to">To</label>
-                            <input id="bottomRight" type="date" name="to" id="to">
+                            <label class="topLeft" for="from">From</label>
+                            <input class="bottomLeft" type="date" name="from" id="from">
+                            <label class="topRight" for="to">To</label>
+                            <input class="bottomRight" type="date" name="to" id="to">
                             <button type="submit">Search and find dates</button>
                         </form>
                     </section>
@@ -79,7 +86,7 @@
             <h2 id="travelTitle">Explore Nature</h2>
             <p>Travel with us and see nature at its finest.</p>
             <div role="region" id="travelDiv">
-                <article>
+                <div role="region">
                     <img src="./asset/mountains2.jpg" alt="">
                     <section aria-labelledby="mountains">
                         <h3 id="mountains">Mountains, Austria</h3>
@@ -87,8 +94,8 @@
                         <p>praesentium placeat fuga, porro laborum commodi nisi consequuntur molestias ipsa.</p>
                         <button>Buy tickets</button>
                     </section>
-                </article>
-                <article>
+                </div>
+                <div role="region">
                     <img src="./asset/ocean2.jpg" alt="">
                     <section aria-labelledby="norway">
                         <h3 id="norway">West Coast, Norway</h3>
@@ -96,7 +103,7 @@
                         <p>praesentium placeat fuga, porro laborum commodi nisi consequuntur molestias ipsa.</p>
                         <button>Buy tickets</button>
                     </section>
-                </article>
+                </div>
             </div>
         </section>
         <section aria-labelledby="subscribeTitle" class="section" id="subscribe">

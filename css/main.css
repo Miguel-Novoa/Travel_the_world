@@ -142,19 +142,19 @@ nav{
     background-color: var(--nav-font-color);
 }
 
-#search #searchSection form #topLeft{
+#search #searchSection form .topLeft{
     grid-area: topleft;
 }
 
-#search #searchSection form #topRight{
+#search #searchSection form .topRight{
     grid-area: topright;
 }
 
-#search #searchSection form #bottomLeft{
+#search #searchSection form .bottomLeft{
     grid-area: bottomleft;
 }
 
-#search #searchSection form #bottomRight{
+#search #searchSection form .bottomRight{
     grid-area: bottomright;
 }
 
