@@ -1,0 +1,24 @@
+{
+  "name": "travel_the_world",
+  "version": "1.0.0",
+  "description": "https://miguel-novoa.github.io/Travel_the_world/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --no-babelrc src -w -d js --preset=env"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miguel-Novoa/Travel_the_world.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Miguel-Novoa/Travel_the_world/issues"
+  },
+  "homepage": "https://github.com/Miguel-Novoa/Travel_the_world#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
